@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <label for="pergunta">Digite o nome da disciplina:</label><br><br>
+        <input type="text" id="pergunta" placeholder="Disciplina"><br><br>
+
+        <!-- Adicione a lista suspensa para escolher o idioma -->
+        <label for="idioma">Escolha o idioma:</label><br> 
+        <select id="idioma">
+            <option value="portugues">Português</option>
+            <option value="ingles">Inglês</option>
+        </select><br><br>
+
+        <button onclick="responder()" id="button-res">Obter Plano</button>
+
+        <div id="resposta-container">
+            <p id="resposta"></p>
+            <button onclick="copiarResposta()" id="button-res">Copiar Planp</button>
+           
+            <button onclick="window.location.href='https://chat.openai.com/'" id="button-res">Ir para o ChatGPT</button>
+            <button onclick="redirecionarParaWhatsApp()" id="button-res">Ir para o WhatsApp</button>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
